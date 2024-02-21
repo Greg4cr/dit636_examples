@@ -163,7 +163,7 @@ public class RecipeBookTest {
     }
 
     @Test
-    public void editRecipeWeird(){
+    public void editRecipeNoChange(){
         //if no change made
         recipeArray[0]= r1;
         recipeArray[1]= r2;
