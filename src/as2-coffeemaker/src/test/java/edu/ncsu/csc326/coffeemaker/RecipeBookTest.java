@@ -99,14 +99,14 @@ public class RecipeBookTest {
     public void testAddRecipeNormal(){
         recipeArray[0]= r1;
         recipeArray[1]= r2;
-        assertTrue(recipeBook.addRecipe(r3)); //should be true as it isn't added yet
+        assertTrue(recipeBook.addRecipe(r3),"Expected successful adition of recipe."); //should be true as it isn't added yet
     }
 
     @Test
     public void testAddRecipeAlreadyExisting(){
         recipeArray[0]= r1;
         recipeArray[1]= r2;
-        assertFalse(recipeBook.addRecipe(r2)); //should be false as it is already added
+        assertFalse(recipeBook.addRecipe(r2),"Shouldn't add recipe as it exists already."); //should be false as it is already added
     }
 
     @Test
@@ -115,7 +115,7 @@ public class RecipeBookTest {
         recipeArray[1]= r2;
         recipeArray[2]= r3;
         recipeArray[3]= r4;
-        assertFalse(recipeBook.addRecipe(r5)); //should be false as we have no space
+        assertFalse(recipeBook.addRecipe(r5),"Expect false as we have no space for new recipe."); //should be false as we have no space
     }
 
     @Test
