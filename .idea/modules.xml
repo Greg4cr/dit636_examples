@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/as2-coffeemaker/as2-coffeemaker.iml" filepath="$PROJECT_DIR$/src/as2-coffeemaker/as2-coffeemaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dit636_examples_18.iml" filepath="$PROJECT_DIR$/.idea/dit636_examples_18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/ex3-meeting-planner/ex3-meeting-planner.iml" filepath="$PROJECT_DIR$/src/ex3-meeting-planner/ex3-meeting-planner.iml" />
+    </modules>
+  </component>
+</project>
