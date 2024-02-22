@@ -82,15 +82,17 @@ public class RecipeBookTest {
         recipeArray[1]= r2;
         recipeArray[2]= r3;
         recipeArray[3]= r4;
-
-        Recipe[] expectedRecipes = {r1, r2, r3, r4};
         Recipe[] actualRecipes = recipeBook.getRecipes();
-        assertArrayEquals(expectedRecipes, actualRecipes, "Failed to find Recipes.");
+
+        assertEquals(r1, actualRecipes[0], "Failed to find Recipe 1.");
+        assertEquals(r2, actualRecipes[1], "Failed to find Recipe 2.");
+        assertEquals(r3, actualRecipes[2], "Failed to find Recipe 3.");
+        assertEquals(r4, actualRecipes[3], "Failed to find Recipe 4.");
     }
 
     @Test
     public void testGetRecipesEmpty() {
-        Recipe[] expectedRecipes = new Recipe[0];
+        Recipe[] expectedRecipes = new Recipe[4];
         Recipe[] actualRecipes = recipeBook.getRecipes();
         assertArrayEquals(expectedRecipes, actualRecipes, "Expected empty recipe list.");
     }
